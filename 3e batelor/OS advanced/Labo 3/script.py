@@ -25,13 +25,14 @@ with open("switch_config.txt", "w") as config_file:
         subnets = list(parent_subnet.subnets(new_prefix=subnet_prefix_length))
 
         for i, subnet in enumerate(subnets[:num_subnets]):
-            vlan_name = f"VLAN{i}"
+            vlan_name = f"VLAN{i+2}"
             vlan_network = str(subnet.network_address)
             vlan_ip = str(subnet.network_address + 1)
 
             config_file.write(f"vlan {i + 2}\n")
             config_file.write(f"name {vlan_name}\n")
-            config_file.write(f"ip address {vlan_ip} {subnet_prefix_length}\n")
+            config_file.write(f"interface vlan {i+2}\n")
+            config_file.write(f"ip address {vlan_ip} 255.255.255.248\n")
             config_file.write("!\n")
 
         config_file.write("end\n")

@@ -1,802 +1,1002 @@
 configure terminal
 vlan 2
-name VLAN0
-ip address 10.0.0.1 28
+name VLAN2
+interface vlan 2
+ip address 10.0.0.1 255.255.255.248
 !
 vlan 3
-name VLAN1
-ip address 10.0.0.17 28
+name VLAN3
+interface vlan 3
+ip address 10.0.0.17 255.255.255.248
 !
 vlan 4
-name VLAN2
-ip address 10.0.0.33 28
+name VLAN4
+interface vlan 4
+ip address 10.0.0.33 255.255.255.248
 !
 vlan 5
-name VLAN3
-ip address 10.0.0.49 28
+name VLAN5
+interface vlan 5
+ip address 10.0.0.49 255.255.255.248
 !
 vlan 6
-name VLAN4
-ip address 10.0.0.65 28
+name VLAN6
+interface vlan 6
+ip address 10.0.0.65 255.255.255.248
 !
 vlan 7
-name VLAN5
-ip address 10.0.0.81 28
+name VLAN7
+interface vlan 7
+ip address 10.0.0.81 255.255.255.248
 !
 vlan 8
-name VLAN6
-ip address 10.0.0.97 28
+name VLAN8
+interface vlan 8
+ip address 10.0.0.97 255.255.255.248
 !
 vlan 9
-name VLAN7
-ip address 10.0.0.113 28
+name VLAN9
+interface vlan 9
+ip address 10.0.0.113 255.255.255.248
 !
 vlan 10
-name VLAN8
-ip address 10.0.0.129 28
+name VLAN10
+interface vlan 10
+ip address 10.0.0.129 255.255.255.248
 !
 vlan 11
-name VLAN9
-ip address 10.0.0.145 28
+name VLAN11
+interface vlan 11
+ip address 10.0.0.145 255.255.255.248
 !
 vlan 12
-name VLAN10
-ip address 10.0.0.161 28
+name VLAN12
+interface vlan 12
+ip address 10.0.0.161 255.255.255.248
 !
 vlan 13
-name VLAN11
-ip address 10.0.0.177 28
+name VLAN13
+interface vlan 13
+ip address 10.0.0.177 255.255.255.248
 !
 vlan 14
-name VLAN12
-ip address 10.0.0.193 28
+name VLAN14
+interface vlan 14
+ip address 10.0.0.193 255.255.255.248
 !
 vlan 15
-name VLAN13
-ip address 10.0.0.209 28
+name VLAN15
+interface vlan 15
+ip address 10.0.0.209 255.255.255.248
 !
 vlan 16
-name VLAN14
-ip address 10.0.0.225 28
+name VLAN16
+interface vlan 16
+ip address 10.0.0.225 255.255.255.248
 !
 vlan 17
-name VLAN15
-ip address 10.0.0.241 28
+name VLAN17
+interface vlan 17
+ip address 10.0.0.241 255.255.255.248
 !
 vlan 18
-name VLAN16
-ip address 10.0.1.1 28
+name VLAN18
+interface vlan 18
+ip address 10.0.1.1 255.255.255.248
 !
 vlan 19
-name VLAN17
-ip address 10.0.1.17 28
+name VLAN19
+interface vlan 19
+ip address 10.0.1.17 255.255.255.248
 !
 vlan 20
-name VLAN18
-ip address 10.0.1.33 28
+name VLAN20
+interface vlan 20
+ip address 10.0.1.33 255.255.255.248
 !
 vlan 21
-name VLAN19
-ip address 10.0.1.49 28
+name VLAN21
+interface vlan 21
+ip address 10.0.1.49 255.255.255.248
 !
 vlan 22
-name VLAN20
-ip address 10.0.1.65 28
+name VLAN22
+interface vlan 22
+ip address 10.0.1.65 255.255.255.248
 !
 vlan 23
-name VLAN21
-ip address 10.0.1.81 28
+name VLAN23
+interface vlan 23
+ip address 10.0.1.81 255.255.255.248
 !
 vlan 24
-name VLAN22
-ip address 10.0.1.97 28
+name VLAN24
+interface vlan 24
+ip address 10.0.1.97 255.255.255.248
 !
 vlan 25
-name VLAN23
-ip address 10.0.1.113 28
+name VLAN25
+interface vlan 25
+ip address 10.0.1.113 255.255.255.248
 !
 vlan 26
-name VLAN24
-ip address 10.0.1.129 28
+name VLAN26
+interface vlan 26
+ip address 10.0.1.129 255.255.255.248
 !
 vlan 27
-name VLAN25
-ip address 10.0.1.145 28
+name VLAN27
+interface vlan 27
+ip address 10.0.1.145 255.255.255.248
 !
 vlan 28
-name VLAN26
-ip address 10.0.1.161 28
+name VLAN28
+interface vlan 28
+ip address 10.0.1.161 255.255.255.248
 !
 vlan 29
-name VLAN27
-ip address 10.0.1.177 28
+name VLAN29
+interface vlan 29
+ip address 10.0.1.177 255.255.255.248
 !
 vlan 30
-name VLAN28
-ip address 10.0.1.193 28
+name VLAN30
+interface vlan 30
+ip address 10.0.1.193 255.255.255.248
 !
 vlan 31
-name VLAN29
-ip address 10.0.1.209 28
+name VLAN31
+interface vlan 31
+ip address 10.0.1.209 255.255.255.248
 !
 vlan 32
-name VLAN30
-ip address 10.0.1.225 28
+name VLAN32
+interface vlan 32
+ip address 10.0.1.225 255.255.255.248
 !
 vlan 33
-name VLAN31
-ip address 10.0.1.241 28
+name VLAN33
+interface vlan 33
+ip address 10.0.1.241 255.255.255.248
 !
 vlan 34
-name VLAN32
-ip address 10.0.2.1 28
+name VLAN34
+interface vlan 34
+ip address 10.0.2.1 255.255.255.248
 !
 vlan 35
-name VLAN33
-ip address 10.0.2.17 28
+name VLAN35
+interface vlan 35
+ip address 10.0.2.17 255.255.255.248
 !
 vlan 36
-name VLAN34
-ip address 10.0.2.33 28
+name VLAN36
+interface vlan 36
+ip address 10.0.2.33 255.255.255.248
 !
 vlan 37
-name VLAN35
-ip address 10.0.2.49 28
+name VLAN37
+interface vlan 37
+ip address 10.0.2.49 255.255.255.248
 !
 vlan 38
-name VLAN36
-ip address 10.0.2.65 28
+name VLAN38
+interface vlan 38
+ip address 10.0.2.65 255.255.255.248
 !
 vlan 39
-name VLAN37
-ip address 10.0.2.81 28
+name VLAN39
+interface vlan 39
+ip address 10.0.2.81 255.255.255.248
 !
 vlan 40
-name VLAN38
-ip address 10.0.2.97 28
+name VLAN40
+interface vlan 40
+ip address 10.0.2.97 255.255.255.248
 !
 vlan 41
-name VLAN39
-ip address 10.0.2.113 28
+name VLAN41
+interface vlan 41
+ip address 10.0.2.113 255.255.255.248
 !
 vlan 42
-name VLAN40
-ip address 10.0.2.129 28
+name VLAN42
+interface vlan 42
+ip address 10.0.2.129 255.255.255.248
 !
 vlan 43
-name VLAN41
-ip address 10.0.2.145 28
+name VLAN43
+interface vlan 43
+ip address 10.0.2.145 255.255.255.248
 !
 vlan 44
-name VLAN42
-ip address 10.0.2.161 28
+name VLAN44
+interface vlan 44
+ip address 10.0.2.161 255.255.255.248
 !
 vlan 45
-name VLAN43
-ip address 10.0.2.177 28
+name VLAN45
+interface vlan 45
+ip address 10.0.2.177 255.255.255.248
 !
 vlan 46
-name VLAN44
-ip address 10.0.2.193 28
+name VLAN46
+interface vlan 46
+ip address 10.0.2.193 255.255.255.248
 !
 vlan 47
-name VLAN45
-ip address 10.0.2.209 28
+name VLAN47
+interface vlan 47
+ip address 10.0.2.209 255.255.255.248
 !
 vlan 48
-name VLAN46
-ip address 10.0.2.225 28
+name VLAN48
+interface vlan 48
+ip address 10.0.2.225 255.255.255.248
 !
 vlan 49
-name VLAN47
-ip address 10.0.2.241 28
+name VLAN49
+interface vlan 49
+ip address 10.0.2.241 255.255.255.248
 !
 vlan 50
-name VLAN48
-ip address 10.0.3.1 28
+name VLAN50
+interface vlan 50
+ip address 10.0.3.1 255.255.255.248
 !
 vlan 51
-name VLAN49
-ip address 10.0.3.17 28
+name VLAN51
+interface vlan 51
+ip address 10.0.3.17 255.255.255.248
 !
 vlan 52
-name VLAN50
-ip address 10.0.3.33 28
+name VLAN52
+interface vlan 52
+ip address 10.0.3.33 255.255.255.248
 !
 vlan 53
-name VLAN51
-ip address 10.0.3.49 28
+name VLAN53
+interface vlan 53
+ip address 10.0.3.49 255.255.255.248
 !
 vlan 54
-name VLAN52
-ip address 10.0.3.65 28
+name VLAN54
+interface vlan 54
+ip address 10.0.3.65 255.255.255.248
 !
 vlan 55
-name VLAN53
-ip address 10.0.3.81 28
+name VLAN55
+interface vlan 55
+ip address 10.0.3.81 255.255.255.248
 !
 vlan 56
-name VLAN54
-ip address 10.0.3.97 28
+name VLAN56
+interface vlan 56
+ip address 10.0.3.97 255.255.255.248
 !
 vlan 57
-name VLAN55
-ip address 10.0.3.113 28
+name VLAN57
+interface vlan 57
+ip address 10.0.3.113 255.255.255.248
 !
 vlan 58
-name VLAN56
-ip address 10.0.3.129 28
+name VLAN58
+interface vlan 58
+ip address 10.0.3.129 255.255.255.248
 !
 vlan 59
-name VLAN57
-ip address 10.0.3.145 28
+name VLAN59
+interface vlan 59
+ip address 10.0.3.145 255.255.255.248
 !
 vlan 60
-name VLAN58
-ip address 10.0.3.161 28
+name VLAN60
+interface vlan 60
+ip address 10.0.3.161 255.255.255.248
 !
 vlan 61
-name VLAN59
-ip address 10.0.3.177 28
+name VLAN61
+interface vlan 61
+ip address 10.0.3.177 255.255.255.248
 !
 vlan 62
-name VLAN60
-ip address 10.0.3.193 28
+name VLAN62
+interface vlan 62
+ip address 10.0.3.193 255.255.255.248
 !
 vlan 63
-name VLAN61
-ip address 10.0.3.209 28
+name VLAN63
+interface vlan 63
+ip address 10.0.3.209 255.255.255.248
 !
 vlan 64
-name VLAN62
-ip address 10.0.3.225 28
+name VLAN64
+interface vlan 64
+ip address 10.0.3.225 255.255.255.248
 !
 vlan 65
-name VLAN63
-ip address 10.0.3.241 28
+name VLAN65
+interface vlan 65
+ip address 10.0.3.241 255.255.255.248
 !
 vlan 66
-name VLAN64
-ip address 10.0.4.1 28
+name VLAN66
+interface vlan 66
+ip address 10.0.4.1 255.255.255.248
 !
 vlan 67
-name VLAN65
-ip address 10.0.4.17 28
+name VLAN67
+interface vlan 67
+ip address 10.0.4.17 255.255.255.248
 !
 vlan 68
-name VLAN66
-ip address 10.0.4.33 28
+name VLAN68
+interface vlan 68
+ip address 10.0.4.33 255.255.255.248
 !
 vlan 69
-name VLAN67
-ip address 10.0.4.49 28
+name VLAN69
+interface vlan 69
+ip address 10.0.4.49 255.255.255.248
 !
 vlan 70
-name VLAN68
-ip address 10.0.4.65 28
+name VLAN70
+interface vlan 70
+ip address 10.0.4.65 255.255.255.248
 !
 vlan 71
-name VLAN69
-ip address 10.0.4.81 28
+name VLAN71
+interface vlan 71
+ip address 10.0.4.81 255.255.255.248
 !
 vlan 72
-name VLAN70
-ip address 10.0.4.97 28
+name VLAN72
+interface vlan 72
+ip address 10.0.4.97 255.255.255.248
 !
 vlan 73
-name VLAN71
-ip address 10.0.4.113 28
+name VLAN73
+interface vlan 73
+ip address 10.0.4.113 255.255.255.248
 !
 vlan 74
-name VLAN72
-ip address 10.0.4.129 28
+name VLAN74
+interface vlan 74
+ip address 10.0.4.129 255.255.255.248
 !
 vlan 75
-name VLAN73
-ip address 10.0.4.145 28
+name VLAN75
+interface vlan 75
+ip address 10.0.4.145 255.255.255.248
 !
 vlan 76
-name VLAN74
-ip address 10.0.4.161 28
+name VLAN76
+interface vlan 76
+ip address 10.0.4.161 255.255.255.248
 !
 vlan 77
-name VLAN75
-ip address 10.0.4.177 28
+name VLAN77
+interface vlan 77
+ip address 10.0.4.177 255.255.255.248
 !
 vlan 78
-name VLAN76
-ip address 10.0.4.193 28
+name VLAN78
+interface vlan 78
+ip address 10.0.4.193 255.255.255.248
 !
 vlan 79
-name VLAN77
-ip address 10.0.4.209 28
+name VLAN79
+interface vlan 79
+ip address 10.0.4.209 255.255.255.248
 !
 vlan 80
-name VLAN78
-ip address 10.0.4.225 28
+name VLAN80
+interface vlan 80
+ip address 10.0.4.225 255.255.255.248
 !
 vlan 81
-name VLAN79
-ip address 10.0.4.241 28
+name VLAN81
+interface vlan 81
+ip address 10.0.4.241 255.255.255.248
 !
 vlan 82
-name VLAN80
-ip address 10.0.5.1 28
+name VLAN82
+interface vlan 82
+ip address 10.0.5.1 255.255.255.248
 !
 vlan 83
-name VLAN81
-ip address 10.0.5.17 28
+name VLAN83
+interface vlan 83
+ip address 10.0.5.17 255.255.255.248
 !
 vlan 84
-name VLAN82
-ip address 10.0.5.33 28
+name VLAN84
+interface vlan 84
+ip address 10.0.5.33 255.255.255.248
 !
 vlan 85
-name VLAN83
-ip address 10.0.5.49 28
+name VLAN85
+interface vlan 85
+ip address 10.0.5.49 255.255.255.248
 !
 vlan 86
-name VLAN84
-ip address 10.0.5.65 28
+name VLAN86
+interface vlan 86
+ip address 10.0.5.65 255.255.255.248
 !
 vlan 87
-name VLAN85
-ip address 10.0.5.81 28
+name VLAN87
+interface vlan 87
+ip address 10.0.5.81 255.255.255.248
 !
 vlan 88
-name VLAN86
-ip address 10.0.5.97 28
+name VLAN88
+interface vlan 88
+ip address 10.0.5.97 255.255.255.248
 !
 vlan 89
-name VLAN87
-ip address 10.0.5.113 28
+name VLAN89
+interface vlan 89
+ip address 10.0.5.113 255.255.255.248
 !
 vlan 90
-name VLAN88
-ip address 10.0.5.129 28
+name VLAN90
+interface vlan 90
+ip address 10.0.5.129 255.255.255.248
 !
 vlan 91
-name VLAN89
-ip address 10.0.5.145 28
+name VLAN91
+interface vlan 91
+ip address 10.0.5.145 255.255.255.248
 !
 vlan 92
-name VLAN90
-ip address 10.0.5.161 28
+name VLAN92
+interface vlan 92
+ip address 10.0.5.161 255.255.255.248
 !
 vlan 93
-name VLAN91
-ip address 10.0.5.177 28
+name VLAN93
+interface vlan 93
+ip address 10.0.5.177 255.255.255.248
 !
 vlan 94
-name VLAN92
-ip address 10.0.5.193 28
+name VLAN94
+interface vlan 94
+ip address 10.0.5.193 255.255.255.248
 !
 vlan 95
-name VLAN93
-ip address 10.0.5.209 28
+name VLAN95
+interface vlan 95
+ip address 10.0.5.209 255.255.255.248
 !
 vlan 96
-name VLAN94
-ip address 10.0.5.225 28
+name VLAN96
+interface vlan 96
+ip address 10.0.5.225 255.255.255.248
 !
 vlan 97
-name VLAN95
-ip address 10.0.5.241 28
+name VLAN97
+interface vlan 97
+ip address 10.0.5.241 255.255.255.248
 !
 vlan 98
-name VLAN96
-ip address 10.0.6.1 28
+name VLAN98
+interface vlan 98
+ip address 10.0.6.1 255.255.255.248
 !
 vlan 99
-name VLAN97
-ip address 10.0.6.17 28
+name VLAN99
+interface vlan 99
+ip address 10.0.6.17 255.255.255.248
 !
 vlan 100
-name VLAN98
-ip address 10.0.6.33 28
+name VLAN100
+interface vlan 100
+ip address 10.0.6.33 255.255.255.248
 !
 vlan 101
-name VLAN99
-ip address 10.0.6.49 28
+name VLAN101
+interface vlan 101
+ip address 10.0.6.49 255.255.255.248
 !
 vlan 102
-name VLAN100
-ip address 10.0.6.65 28
+name VLAN102
+interface vlan 102
+ip address 10.0.6.65 255.255.255.248
 !
 vlan 103
-name VLAN101
-ip address 10.0.6.81 28
+name VLAN103
+interface vlan 103
+ip address 10.0.6.81 255.255.255.248
 !
 vlan 104
-name VLAN102
-ip address 10.0.6.97 28
+name VLAN104
+interface vlan 104
+ip address 10.0.6.97 255.255.255.248
 !
 vlan 105
-name VLAN103
-ip address 10.0.6.113 28
+name VLAN105
+interface vlan 105
+ip address 10.0.6.113 255.255.255.248
 !
 vlan 106
-name VLAN104
-ip address 10.0.6.129 28
+name VLAN106
+interface vlan 106
+ip address 10.0.6.129 255.255.255.248
 !
 vlan 107
-name VLAN105
-ip address 10.0.6.145 28
+name VLAN107
+interface vlan 107
+ip address 10.0.6.145 255.255.255.248
 !
 vlan 108
-name VLAN106
-ip address 10.0.6.161 28
+name VLAN108
+interface vlan 108
+ip address 10.0.6.161 255.255.255.248
 !
 vlan 109
-name VLAN107
-ip address 10.0.6.177 28
+name VLAN109
+interface vlan 109
+ip address 10.0.6.177 255.255.255.248
 !
 vlan 110
-name VLAN108
-ip address 10.0.6.193 28
+name VLAN110
+interface vlan 110
+ip address 10.0.6.193 255.255.255.248
 !
 vlan 111
-name VLAN109
-ip address 10.0.6.209 28
+name VLAN111
+interface vlan 111
+ip address 10.0.6.209 255.255.255.248
 !
 vlan 112
-name VLAN110
-ip address 10.0.6.225 28
+name VLAN112
+interface vlan 112
+ip address 10.0.6.225 255.255.255.248
 !
 vlan 113
-name VLAN111
-ip address 10.0.6.241 28
+name VLAN113
+interface vlan 113
+ip address 10.0.6.241 255.255.255.248
 !
 vlan 114
-name VLAN112
-ip address 10.0.7.1 28
+name VLAN114
+interface vlan 114
+ip address 10.0.7.1 255.255.255.248
 !
 vlan 115
-name VLAN113
-ip address 10.0.7.17 28
+name VLAN115
+interface vlan 115
+ip address 10.0.7.17 255.255.255.248
 !
 vlan 116
-name VLAN114
-ip address 10.0.7.33 28
+name VLAN116
+interface vlan 116
+ip address 10.0.7.33 255.255.255.248
 !
 vlan 117
-name VLAN115
-ip address 10.0.7.49 28
+name VLAN117
+interface vlan 117
+ip address 10.0.7.49 255.255.255.248
 !
 vlan 118
-name VLAN116
-ip address 10.0.7.65 28
+name VLAN118
+interface vlan 118
+ip address 10.0.7.65 255.255.255.248
 !
 vlan 119
-name VLAN117
-ip address 10.0.7.81 28
+name VLAN119
+interface vlan 119
+ip address 10.0.7.81 255.255.255.248
 !
 vlan 120
-name VLAN118
-ip address 10.0.7.97 28
+name VLAN120
+interface vlan 120
+ip address 10.0.7.97 255.255.255.248
 !
 vlan 121
-name VLAN119
-ip address 10.0.7.113 28
+name VLAN121
+interface vlan 121
+ip address 10.0.7.113 255.255.255.248
 !
 vlan 122
-name VLAN120
-ip address 10.0.7.129 28
+name VLAN122
+interface vlan 122
+ip address 10.0.7.129 255.255.255.248
 !
 vlan 123
-name VLAN121
-ip address 10.0.7.145 28
+name VLAN123
+interface vlan 123
+ip address 10.0.7.145 255.255.255.248
 !
 vlan 124
-name VLAN122
-ip address 10.0.7.161 28
+name VLAN124
+interface vlan 124
+ip address 10.0.7.161 255.255.255.248
 !
 vlan 125
-name VLAN123
-ip address 10.0.7.177 28
+name VLAN125
+interface vlan 125
+ip address 10.0.7.177 255.255.255.248
 !
 vlan 126
-name VLAN124
-ip address 10.0.7.193 28
+name VLAN126
+interface vlan 126
+ip address 10.0.7.193 255.255.255.248
 !
 vlan 127
-name VLAN125
-ip address 10.0.7.209 28
+name VLAN127
+interface vlan 127
+ip address 10.0.7.209 255.255.255.248
 !
 vlan 128
-name VLAN126
-ip address 10.0.7.225 28
+name VLAN128
+interface vlan 128
+ip address 10.0.7.225 255.255.255.248
 !
 vlan 129
-name VLAN127
-ip address 10.0.7.241 28
+name VLAN129
+interface vlan 129
+ip address 10.0.7.241 255.255.255.248
 !
 vlan 130
-name VLAN128
-ip address 10.0.8.1 28
+name VLAN130
+interface vlan 130
+ip address 10.0.8.1 255.255.255.248
 !
 vlan 131
-name VLAN129
-ip address 10.0.8.17 28
+name VLAN131
+interface vlan 131
+ip address 10.0.8.17 255.255.255.248
 !
 vlan 132
-name VLAN130
-ip address 10.0.8.33 28
+name VLAN132
+interface vlan 132
+ip address 10.0.8.33 255.255.255.248
 !
 vlan 133
-name VLAN131
-ip address 10.0.8.49 28
+name VLAN133
+interface vlan 133
+ip address 10.0.8.49 255.255.255.248
 !
 vlan 134
-name VLAN132
-ip address 10.0.8.65 28
+name VLAN134
+interface vlan 134
+ip address 10.0.8.65 255.255.255.248
 !
 vlan 135
-name VLAN133
-ip address 10.0.8.81 28
+name VLAN135
+interface vlan 135
+ip address 10.0.8.81 255.255.255.248
 !
 vlan 136
-name VLAN134
-ip address 10.0.8.97 28
+name VLAN136
+interface vlan 136
+ip address 10.0.8.97 255.255.255.248
 !
 vlan 137
-name VLAN135
-ip address 10.0.8.113 28
+name VLAN137
+interface vlan 137
+ip address 10.0.8.113 255.255.255.248
 !
 vlan 138
-name VLAN136
-ip address 10.0.8.129 28
+name VLAN138
+interface vlan 138
+ip address 10.0.8.129 255.255.255.248
 !
 vlan 139
-name VLAN137
-ip address 10.0.8.145 28
+name VLAN139
+interface vlan 139
+ip address 10.0.8.145 255.255.255.248
 !
 vlan 140
-name VLAN138
-ip address 10.0.8.161 28
+name VLAN140
+interface vlan 140
+ip address 10.0.8.161 255.255.255.248
 !
 vlan 141
-name VLAN139
-ip address 10.0.8.177 28
+name VLAN141
+interface vlan 141
+ip address 10.0.8.177 255.255.255.248
 !
 vlan 142
-name VLAN140
-ip address 10.0.8.193 28
+name VLAN142
+interface vlan 142
+ip address 10.0.8.193 255.255.255.248
 !
 vlan 143
-name VLAN141
-ip address 10.0.8.209 28
+name VLAN143
+interface vlan 143
+ip address 10.0.8.209 255.255.255.248
 !
 vlan 144
-name VLAN142
-ip address 10.0.8.225 28
+name VLAN144
+interface vlan 144
+ip address 10.0.8.225 255.255.255.248
 !
 vlan 145
-name VLAN143
-ip address 10.0.8.241 28
+name VLAN145
+interface vlan 145
+ip address 10.0.8.241 255.255.255.248
 !
 vlan 146
-name VLAN144
-ip address 10.0.9.1 28
+name VLAN146
+interface vlan 146
+ip address 10.0.9.1 255.255.255.248
 !
 vlan 147
-name VLAN145
-ip address 10.0.9.17 28
+name VLAN147
+interface vlan 147
+ip address 10.0.9.17 255.255.255.248
 !
 vlan 148
-name VLAN146
-ip address 10.0.9.33 28
+name VLAN148
+interface vlan 148
+ip address 10.0.9.33 255.255.255.248
 !
 vlan 149
-name VLAN147
-ip address 10.0.9.49 28
+name VLAN149
+interface vlan 149
+ip address 10.0.9.49 255.255.255.248
 !
 vlan 150
-name VLAN148
-ip address 10.0.9.65 28
+name VLAN150
+interface vlan 150
+ip address 10.0.9.65 255.255.255.248
 !
 vlan 151
-name VLAN149
-ip address 10.0.9.81 28
+name VLAN151
+interface vlan 151
+ip address 10.0.9.81 255.255.255.248
 !
 vlan 152
-name VLAN150
-ip address 10.0.9.97 28
+name VLAN152
+interface vlan 152
+ip address 10.0.9.97 255.255.255.248
 !
 vlan 153
-name VLAN151
-ip address 10.0.9.113 28
+name VLAN153
+interface vlan 153
+ip address 10.0.9.113 255.255.255.248
 !
 vlan 154
-name VLAN152
-ip address 10.0.9.129 28
+name VLAN154
+interface vlan 154
+ip address 10.0.9.129 255.255.255.248
 !
 vlan 155
-name VLAN153
-ip address 10.0.9.145 28
+name VLAN155
+interface vlan 155
+ip address 10.0.9.145 255.255.255.248
 !
 vlan 156
-name VLAN154
-ip address 10.0.9.161 28
+name VLAN156
+interface vlan 156
+ip address 10.0.9.161 255.255.255.248
 !
 vlan 157
-name VLAN155
-ip address 10.0.9.177 28
+name VLAN157
+interface vlan 157
+ip address 10.0.9.177 255.255.255.248
 !
 vlan 158
-name VLAN156
-ip address 10.0.9.193 28
+name VLAN158
+interface vlan 158
+ip address 10.0.9.193 255.255.255.248
 !
 vlan 159
-name VLAN157
-ip address 10.0.9.209 28
+name VLAN159
+interface vlan 159
+ip address 10.0.9.209 255.255.255.248
 !
 vlan 160
-name VLAN158
-ip address 10.0.9.225 28
+name VLAN160
+interface vlan 160
+ip address 10.0.9.225 255.255.255.248
 !
 vlan 161
-name VLAN159
-ip address 10.0.9.241 28
+name VLAN161
+interface vlan 161
+ip address 10.0.9.241 255.255.255.248
 !
 vlan 162
-name VLAN160
-ip address 10.0.10.1 28
+name VLAN162
+interface vlan 162
+ip address 10.0.10.1 255.255.255.248
 !
 vlan 163
-name VLAN161
-ip address 10.0.10.17 28
+name VLAN163
+interface vlan 163
+ip address 10.0.10.17 255.255.255.248
 !
 vlan 164
-name VLAN162
-ip address 10.0.10.33 28
+name VLAN164
+interface vlan 164
+ip address 10.0.10.33 255.255.255.248
 !
 vlan 165
-name VLAN163
-ip address 10.0.10.49 28
+name VLAN165
+interface vlan 165
+ip address 10.0.10.49 255.255.255.248
 !
 vlan 166
-name VLAN164
-ip address 10.0.10.65 28
+name VLAN166
+interface vlan 166
+ip address 10.0.10.65 255.255.255.248
 !
 vlan 167
-name VLAN165
-ip address 10.0.10.81 28
+name VLAN167
+interface vlan 167
+ip address 10.0.10.81 255.255.255.248
 !
 vlan 168
-name VLAN166
-ip address 10.0.10.97 28
+name VLAN168
+interface vlan 168
+ip address 10.0.10.97 255.255.255.248
 !
 vlan 169
-name VLAN167
-ip address 10.0.10.113 28
+name VLAN169
+interface vlan 169
+ip address 10.0.10.113 255.255.255.248
 !
 vlan 170
-name VLAN168
-ip address 10.0.10.129 28
+name VLAN170
+interface vlan 170
+ip address 10.0.10.129 255.255.255.248
 !
 vlan 171
-name VLAN169
-ip address 10.0.10.145 28
+name VLAN171
+interface vlan 171
+ip address 10.0.10.145 255.255.255.248
 !
 vlan 172
-name VLAN170
-ip address 10.0.10.161 28
+name VLAN172
+interface vlan 172
+ip address 10.0.10.161 255.255.255.248
 !
 vlan 173
-name VLAN171
-ip address 10.0.10.177 28
+name VLAN173
+interface vlan 173
+ip address 10.0.10.177 255.255.255.248
 !
 vlan 174
-name VLAN172
-ip address 10.0.10.193 28
+name VLAN174
+interface vlan 174
+ip address 10.0.10.193 255.255.255.248
 !
 vlan 175
-name VLAN173
-ip address 10.0.10.209 28
+name VLAN175
+interface vlan 175
+ip address 10.0.10.209 255.255.255.248
 !
 vlan 176
-name VLAN174
-ip address 10.0.10.225 28
+name VLAN176
+interface vlan 176
+ip address 10.0.10.225 255.255.255.248
 !
 vlan 177
-name VLAN175
-ip address 10.0.10.241 28
+name VLAN177
+interface vlan 177
+ip address 10.0.10.241 255.255.255.248
 !
 vlan 178
-name VLAN176
-ip address 10.0.11.1 28
+name VLAN178
+interface vlan 178
+ip address 10.0.11.1 255.255.255.248
 !
 vlan 179
-name VLAN177
-ip address 10.0.11.17 28
+name VLAN179
+interface vlan 179
+ip address 10.0.11.17 255.255.255.248
 !
 vlan 180
-name VLAN178
-ip address 10.0.11.33 28
+name VLAN180
+interface vlan 180
+ip address 10.0.11.33 255.255.255.248
 !
 vlan 181
-name VLAN179
-ip address 10.0.11.49 28
+name VLAN181
+interface vlan 181
+ip address 10.0.11.49 255.255.255.248
 !
 vlan 182
-name VLAN180
-ip address 10.0.11.65 28
+name VLAN182
+interface vlan 182
+ip address 10.0.11.65 255.255.255.248
 !
 vlan 183
-name VLAN181
-ip address 10.0.11.81 28
+name VLAN183
+interface vlan 183
+ip address 10.0.11.81 255.255.255.248
 !
 vlan 184
-name VLAN182
-ip address 10.0.11.97 28
+name VLAN184
+interface vlan 184
+ip address 10.0.11.97 255.255.255.248
 !
 vlan 185
-name VLAN183
-ip address 10.0.11.113 28
+name VLAN185
+interface vlan 185
+ip address 10.0.11.113 255.255.255.248
 !
 vlan 186
-name VLAN184
-ip address 10.0.11.129 28
+name VLAN186
+interface vlan 186
+ip address 10.0.11.129 255.255.255.248
 !
 vlan 187
-name VLAN185
-ip address 10.0.11.145 28
+name VLAN187
+interface vlan 187
+ip address 10.0.11.145 255.255.255.248
 !
 vlan 188
-name VLAN186
-ip address 10.0.11.161 28
+name VLAN188
+interface vlan 188
+ip address 10.0.11.161 255.255.255.248
 !
 vlan 189
-name VLAN187
-ip address 10.0.11.177 28
+name VLAN189
+interface vlan 189
+ip address 10.0.11.177 255.255.255.248
 !
 vlan 190
-name VLAN188
-ip address 10.0.11.193 28
+name VLAN190
+interface vlan 190
+ip address 10.0.11.193 255.255.255.248
 !
 vlan 191
-name VLAN189
-ip address 10.0.11.209 28
+name VLAN191
+interface vlan 191
+ip address 10.0.11.209 255.255.255.248
 !
 vlan 192
-name VLAN190
-ip address 10.0.11.225 28
+name VLAN192
+interface vlan 192
+ip address 10.0.11.225 255.255.255.248
 !
 vlan 193
-name VLAN191
-ip address 10.0.11.241 28
+name VLAN193
+interface vlan 193
+ip address 10.0.11.241 255.255.255.248
 !
 vlan 194
-name VLAN192
-ip address 10.0.12.1 28
+name VLAN194
+interface vlan 194
+ip address 10.0.12.1 255.255.255.248
 !
 vlan 195
-name VLAN193
-ip address 10.0.12.17 28
+name VLAN195
+interface vlan 195
+ip address 10.0.12.17 255.255.255.248
 !
 vlan 196
-name VLAN194
-ip address 10.0.12.33 28
+name VLAN196
+interface vlan 196
+ip address 10.0.12.33 255.255.255.248
 !
 vlan 197
-name VLAN195
-ip address 10.0.12.49 28
+name VLAN197
+interface vlan 197
+ip address 10.0.12.49 255.255.255.248
 !
 vlan 198
-name VLAN196
-ip address 10.0.12.65 28
+name VLAN198
+interface vlan 198
+ip address 10.0.12.65 255.255.255.248
 !
 vlan 199
-name VLAN197
-ip address 10.0.12.81 28
+name VLAN199
+interface vlan 199
+ip address 10.0.12.81 255.255.255.248
 !
 vlan 200
-name VLAN198
-ip address 10.0.12.97 28
+name VLAN200
+interface vlan 200
+ip address 10.0.12.97 255.255.255.248
 !
 vlan 201
-name VLAN199
-ip address 10.0.12.113 28
+name VLAN201
+interface vlan 201
+ip address 10.0.12.113 255.255.255.248
 !
 end
