@@ -1,0 +1,11 @@
+ena
+conf t
+hostname switch-pieter
+ip domain-name pieter_netwerk
+crypto key generate rsa
+1048
+ip ssh version 2
+line vty 1 10
+transport input ssh
+login local
+username admin password t
