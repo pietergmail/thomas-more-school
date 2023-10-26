@@ -26,11 +26,11 @@ with open("opensuse-vlan.txt", "w") as config_file:
             vlan_network = str(subnet.network_address)
             vlan_ip = str(subnet.network_address + 2)
 
-            config_file.write(f"echo IPADDR= \'{vlan_ip}\\28\' >> {outputfile} \n")
-            config_file.write(f"echo BOOTPROTO=\'static\' >> {outputfile} \n")
-            config_file.write(f"echo STARTMODE=\'hotplug\' >> {outputfile} \n")
+            config_file.write(f"echo IPADDR=\\'{vlan_ip}\\28\\' >> {outputfile} \n")
+            config_file.write(f"echo BOOTPROTO=\\'static\\' >> {outputfile} \n")
+            config_file.write(f"echo STARTMODE=\\'hotplug\\' >> {outputfile} \n")
             config_file.write(f"echo ZONE=public >> {outputfile} \n")
-            config_file.write(f"echo VLAN=\'yes\' >> {outputfile} \n")
-            config_file.write(f"echo ETHERDEVICE==\'eth1\' >> {outputfile} \n")
+            config_file.write(f"echo VLAN=\\'yes\\' >> {outputfile} \n")
+            config_file.write(f"echo ETHERDEVICE=\\'eth1\\' >> {outputfile} \n")
 
 print("Configuration file generated: opensuse-vlan.txt")
