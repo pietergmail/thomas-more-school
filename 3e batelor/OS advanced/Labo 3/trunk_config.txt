@@ -1,0 +1,6 @@
+ena
+conf t
+int fa0/1
+switchport mode trunk
+switchport trunk allowed vlan 1-201
+exit
