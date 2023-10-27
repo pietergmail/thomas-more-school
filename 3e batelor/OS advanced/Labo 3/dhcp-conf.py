@@ -32,8 +32,8 @@ with open("dhcp_config.txt", "w") as config_file:
             vlan_ip_end = str(subnet.network_address + 14)
 
             config_file.write(f"echo subnet={vlan_network} netmask = 255.255.255.240 '{{' >> /etc/dhcpd.conf \n")
-            config_file.write(f"echo     range dynamic-bootp {vlan_ip_start} {vlan_ip_end}; >> /etc/dhcpd.conf\n")
-            config_file.write(f"echo     option routers {vlan_default}; >> /etc/dhcpd.conf\n")
+            config_file.write(f"echo \"    range dynamic-bootp {vlan_ip_start} {vlan_ip_end};\" >> /etc/dhcpd.conf\n")
+            config_file.write(f"echo \"    option routers {vlan_default};\" >> /etc/dhcpd.conf\n")
             config_file.write("echo } >> /etc/dhcpd.conf\n")
 
 
