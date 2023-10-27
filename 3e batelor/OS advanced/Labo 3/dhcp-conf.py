@@ -14,10 +14,6 @@ subnet_size = 2 ** (32 - subnet_prefix_length)
 
 # Open a file for writing the configuration
 with open("dhcp_config.txt", "w") as config_file:
-    # Write the initial configuration
-    config_file.write("configure terminal\n")
-
-
     # Check if there are enough addresses in the parent subnet
     if num_subnets * subnet_size > parent_subnet.num_addresses:
         print("Error: Not enough addresses in the parent subnet to create 200 /28 subnets.")

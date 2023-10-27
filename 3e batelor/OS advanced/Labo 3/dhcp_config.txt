@@ -1,4 +1,3 @@
-configure terminal
 echo subnet=10.0.0.0 netmask = 255.255.255.240 '{' >> /etc/dhcpd.conf 
 echo "    range dynamic-bootp 10.0.0.3 10.0.0.14;" >> /etc/dhcpd.conf
 echo "    option routers 10.0.0.2;" >> /etc/dhcpd.conf
