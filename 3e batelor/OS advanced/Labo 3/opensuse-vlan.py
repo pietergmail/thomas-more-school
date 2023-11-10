@@ -32,6 +32,6 @@ with open("opensuse-vlan.txt", "w") as config_file:
             config_file.write(f"echo NETMASK=\\'255.255.255.240\\' >> {outputfile} \n")
             config_file.write(f"echo ZONE=public >> {outputfile} \n")
             config_file.write(f"echo VLAN=\\'yes\\' >> {outputfile} \n")
-            config_file.write(f"echo ETHERDEVICE=\\'eth1\\' >> {outputfile} \n")
+            config_file.write(f"echo ETHERDEVICE=\\'eth0\\' >> {outputfile} \n")
 
 print("Configuration file generated: opensuse-vlan.txt")
