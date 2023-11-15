@@ -1,0 +1,26 @@
+DialXS Dutch Asterisk Prompts
+=============================
+Version: V1.2 - 2013/08/19
+Author: Luc Huygen, DialXS BV
+Format: gsm
+Voice: Carolina Mout
+Studio: http://www.studiomichelmulders.com/
+
+These files have been made publically available for use in any commercial/non-commercial Asterisk application by DialXS BV.
+For extra information please check http://www.dialxs.com/wpress/?p=429
+
+Installation
+============
+Just move the extracted 'nl' folder to /var/lib/asterisk/sounds.
+
+Known Issues (Dutch)
+====================
+- "no.gsm" was oorspronkelijk opgenomen als "nee", maar dan klopt de zinsopbouw niet dus gewijzigd in "geen" ("je hebt _geen_ berichten")
+- in SayUnixTime is een aparte NL versie die ongedocumenteerde prompts gebruikt: digits/nl-uur en digits/nl-en (copietjes gemaakt)
+- speed-enterlocation is blijkbaar ook n ongedocumenteerde variant..
+- dir 'ha' (home-automation) zat ook niet in de standaard prompt-lijst, alleen gebruikt Trixbox wel stiekem ha/phone.gsm (copy gemaakt)
+- lang niet alle prompts zijn in de praktijk gebruikt/getest! het is heel goed mogelijk dat er nog kromme Nederlandse zinnen worden geproduceerd...
+- in de voicemail app wordt ook "digits/nl-om" gebruikt en die bestond niet; met knop&plak werk toegevoegd
+
+Heb je vragen, opmerkingen of nuttige suggesties (of misschien SMS, PPC, PPM betaaldiensten nodig ;-)) neem dan gerust contact op.
+Luc Huygen (luc@dialxs.com)
