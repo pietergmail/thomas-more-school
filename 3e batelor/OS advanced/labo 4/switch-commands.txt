@@ -1,0 +1,109 @@
+enable
+configure terminal
+
+vlan 410
+name Servers
+exit
+
+vlan 411
+name Infrastructure
+exit
+
+vlan 412
+name A-Users
+exit
+
+vlan 413
+name B-Users
+exit
+
+vlan 414
+name Externals
+exit
+
+vlan 415
+name IP-phones
+exit
+
+interface vlan 410
+ip address 192.168.10.1 255.255.255.0
+no shutdown
+exit
+
+interface vlan 411
+ip address 192.168.11.1 255.255.255.0
+no shutdown
+exit
+
+interface vlan 412
+ip address 192.168.12.1 255.255.255.0
+no shutdown
+exit
+
+interface vlan 413
+ip address 192.168.13.1 255.255.255.0
+no shutdown
+exit
+
+interface vlan 414
+ip address 192.168.14.1 255.255.255.0
+no shutdown
+exit
+
+interface vlan 415
+ip address 192.168.15.1 255.255.255.0
+no shutdown
+exit
+
+ip dhcp excluded-address 192.168.10.1 192.168.10.10
+ip dhcp pool VLAN410
+network 192.168.10.0 255.255.255.0
+default-router 192.168.10.1
+dns-server 8.8.8.8
+exit
+ip dhcp excluded-address 192.168.11.1 192.168.11.10
+ip dhcp pool VLAN411
+network 192.168.11.0 255.255.255.0
+default-router 192.168.11.1
+dns-server 8.8.8.8
+exit
+
+ip dhcp excluded-address 192.168.12.1 192.168.12.10
+ip dhcp pool VLAN412
+network 192.168.12.0 255.255.255.0
+default-router 192.168.12.1
+dns-server 8.8.8.8
+exit
+
+ip dhcp excluded-address 192.168.13.1 192.168.13.10
+ip dhcp pool VLAN413
+network 192.168.13.0 255.255.255.0
+default-router 192.168.13.1
+dns-server 8.8.8.8
+exit
+
+interface range fa0/1 - 48
+switchport mode access
+switchport access vlan 410
+spanning-tree portfast
+exit
+
+interface range fa0/1 - 48
+switchport mode access
+switchport access vlan 411
+spanning-tree portfast
+exit
+
+interface range fa0/1 - 48
+switchport mode access
+switchport access vlan 412
+spanning-tree portfast
+exit
+
+interface range fa0/1 - 48
+switchport mode access
+switchport access vlan 413
+spanning-tree portfast
+exit
+
+

@@ -1,0 +1,15 @@
+aaa new-model
+
+radius-server host 10.0.0.2 auth-port 1812 acct-port 1813 key <shared-secret>
+
+interface GigabitEthernet0/1
+switchport mode access
+authentication order mab
+authentication priority mab
+authentication port-control auto
+
+mab
+authentication event server dead action authorize vlan 1
+authentication event server alive action reinitialize
+
+write memory
