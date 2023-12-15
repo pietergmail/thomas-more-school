@@ -1,3 +1,26 @@
+ena
+conf t
+
+hostname ca-mab-switch
+ip domain-name pieter.local
+crypto key generate rsa
+2048
+line vty 0 15
+transport input ssh
+login local
+exit
+username admin password cisco
+enable secret cisco
+end
+
+conf t
+int vlan 1
+ip address 10.0.0.1 255.255.0.0
+int fa0/1
+switchport mode access
+switchport access vlan 1
+end
+
 enable
 configure terminal
 
@@ -82,28 +105,35 @@ default-router 192.168.13.1
 dns-server 8.8.8.8
 exit
 
-interface range fa0/1 - 48
+interface range fa0/3 - 24
 switchport mode access
 switchport access vlan 410
 spanning-tree portfast
 exit
 
-interface range fa0/1 - 48
+interface range fa0/3 - 24
 switchport mode access
 switchport access vlan 411
 spanning-tree portfast
 exit
 
-interface range fa0/1 - 48
+interface range fa0/3 - 24
 switchport mode access
 switchport access vlan 412
 spanning-tree portfast
 exit
 
-interface range fa0/1 - 48
+interface range fa0/3 - 24
 switchport mode access
 switchport access vlan 413
 spanning-tree portfast
 exit
 
+int vlan 411
+ip address 192.168.11.1 255.255.255.0
+exit
+
+interface G0/1
+switchport mode access
+switchport access vlan 411
 

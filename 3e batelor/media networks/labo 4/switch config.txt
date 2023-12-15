@@ -1,0 +1,51 @@
+ena
+conf t
+
+hostname switch-M
+ip domain-name pieter.local
+crypto key generate rsa
+2048
+line vty 0 15
+transport input ssh
+login local
+exit
+username admin password cisco
+enable secret cisco
+end
+!
+
+conf t
+int vlan 1
+ip address 10.0.0.1 255.255.0.0
+int fa0/13
+switchport mode access
+switchport access vlan 1
+
+vlan 10
+name voice
+int vlan 10
+ip address 10.0.10.2 255.255.255.0
+vlan 20
+name data
+int vlan 20
+ip address 10.0.20.2 255.255.255.0
+int fa0/1
+switchport mode access
+switchport access vlan 10
+int fa0/2
+switchport mode access
+switchport voice vlan 10
+switchport access vlan 20
+
+ip dhcp pool VLAN10
+network 10.0.10.0 255.255.255.0
+default-router 10.0.10.1
+option 150 ip 10.0.10.1
+exit
+ip dhcp excluded-address 10.0.10.1 10.0.10.10
+
+ip dhcp pool VLAN20
+network 10.0.20.0 255.255.255.0
+default-router 10.0.20.1
+exit
+ip dhcp excluded-address 10.0.20.1 10.0.20.10

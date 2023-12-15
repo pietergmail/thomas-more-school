@@ -1,0 +1,18 @@
+enable
+conf t
+hostname switch-M
+ip domain-name matthew.local
+crypto key generate rsa
+2048
+line vty 0 15
+transport input ssh
+login local
+exit
+username admin password cisco
+enable secret cisco
+end
+!
+conf t
+int vlan 1
+ip address 192.168.1.1 255.255.255.0
+end

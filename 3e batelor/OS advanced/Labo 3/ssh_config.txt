@@ -3,9 +3,13 @@ conf t
 hostname switch-pieter
 ip domain-name pieter_netwerk
 crypto key generate rsa
-1048
-ip ssh version 2
-line vty 1 10
+1024
+line vty 0 15
 transport input ssh
 login local
-username admin password t
+ip ssh version 2
+username cisco password cisco
+end
+aaa new-model
+
+assign ip to interface through vlan
