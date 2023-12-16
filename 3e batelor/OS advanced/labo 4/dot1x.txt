@@ -1,0 +1,15 @@
+enable
+conf t
+
+aaa new-model
+aaa authentication dot1x default group windows-server
+dot1x system-auth-control
+
+identity profile default
+interface g0/1
+dot1x pae authenticator
+end
+
+interface range fa0/13-24
+dot1x pae supplicant
+end

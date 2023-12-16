@@ -84,6 +84,7 @@ network 192.168.10.0 255.255.255.0
 default-router 192.168.10.1
 dns-server 8.8.8.8
 exit
+
 ip dhcp excluded-address 192.168.11.1 192.168.11.10
 ip dhcp pool VLAN411
 network 192.168.11.0 255.255.255.0
@@ -107,27 +108,9 @@ exit
 
 interface range fa0/3 - 24
 switchport mode access
-switchport access vlan 410
 spanning-tree portfast
 exit
 
-interface range fa0/3 - 24
-switchport mode access
-switchport access vlan 411
-spanning-tree portfast
-exit
-
-interface range fa0/3 - 24
-switchport mode access
-switchport access vlan 412
-spanning-tree portfast
-exit
-
-interface range fa0/3 - 24
-switchport mode access
-switchport access vlan 413
-spanning-tree portfast
-exit
 
 int vlan 411
 ip address 192.168.11.1 255.255.255.0

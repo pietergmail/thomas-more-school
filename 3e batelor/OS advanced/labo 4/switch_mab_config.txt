@@ -17,7 +17,7 @@ address ipv4 192.168.11.3 auth-port 1812 acct-port 1813
 automate-tester username dummy
 key My;Secret
 
-interface range fa0/3-24
+interface range fa0/3-12
 switchport mode access
 authentication event server dead action authorize vlan 414
 authentication event server alive action reinitialize
