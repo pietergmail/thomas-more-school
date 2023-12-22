@@ -2,14 +2,40 @@ enable
 conf t
 
 aaa new-model
-aaa authentication dot1x default group windows-server
+
+aaa group server radius RAD-MAB
+server name ca-mab-01
+!
+
+aaa authentication dot1x default group RAD-MAB
+aaa authorization exec default local
+aaa authorization network default group RAD-MAB
+ip radius source-interface vlan411
+radius-server attribute 8 include-in-access-req
+radius-server host 192.168.11.3 key "rad123"
+
+radius server ca-mab-01
+address ipv4 192.168.11.3 auth-port 1812 acct-port 1813
+key rad123
+exit
+
 dot1x system-auth-control
 
-identity profile default
-interface g0/1
-dot1x pae authenticator
-end
+radius server ca-mab-01
+address ipv4 192.168.11.3 auth-port 1812 acct-port 1813
+automate-tester username dummy
+key rad123
 
 interface range fa0/13-24
-dot1x pae supplicant
+switchport mode access
+authentication event server dead action authorize vlan 114
+authentication event server alive action reinitialize
+authentication order dot1x mab
+authentication priority dot1x mab
+authentication port-control auto
+mab
+dot1x pae authenticator
+spanning-tree portfast
 end
+
+

@@ -13,14 +13,6 @@ username admin password cisco
 enable secret cisco
 end
 
-conf t
-int vlan 1
-ip address 10.0.0.1 255.255.0.0
-int fa0/1
-switchport mode access
-switchport access vlan 1
-end
-
 enable
 configure terminal
 
@@ -119,4 +111,3 @@ exit
 interface G0/1
 switchport mode access
 switchport access vlan 411
-

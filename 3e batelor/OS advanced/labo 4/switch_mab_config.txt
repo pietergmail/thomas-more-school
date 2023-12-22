@@ -15,7 +15,7 @@ ip radius source-interface Vlan411
 radius server ca-mab-01
 address ipv4 192.168.11.3 auth-port 1812 acct-port 1813
 automate-tester username dummy
-key My;Secret
+key rad123
 
 interface range fa0/3-12
 switchport mode access
