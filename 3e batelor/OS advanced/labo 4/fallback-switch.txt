@@ -1,18 +1,13 @@
-enable
-conf t
-
-aaa new-model
-aaa authentication dot1x default group windows-server
-dot1x system-auth-control
-
-identity profile default
-interface range fa0/13-24
+int fa0/5
 switchport mode access
 authentication event server dead action authorize vlan 414
 authentication event server alive action reinitialize
 authentication host-mode multi-auth
+authentication order dot1x mab
+authentication priority dot1x mab
 authentication port-control auto
+mab
 dot1x pae authenticator
-dot1x timeout supp-timeout 100
+dot1x timeout tx-period 10
+dot1 max-reauth-req 1
 spanning-tree portfast
-end
